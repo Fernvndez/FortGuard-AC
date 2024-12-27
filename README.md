@@ -1,88 +1,30 @@
 FortiGuard Anti-Cheat System
 
-O FortiGuard é uma solução avançada de anti-cheat desenvolvida para servidores SA-MP, focada em oferecer máxima segurança e integridade ao ambiente de jogo. Este sistema garante que jogadores possam competir de forma justa, bloqueando trapaças e comportamento suspeito em tempo real.
+O FortiGuard é uma solução robusta e eficiente para proteger servidores SA-MP contra trapaças, garantindo uma experiência de jogo justa e segura para todos os jogadores.
 
-Principais Características
+🚀 Funcionalidades Principais
 
-Detecção de Trapaças
+Detecção de Cheats: Bloqueio de aimbots, speed hacks e teletransportes irregulares.
 
-Aimbot e Cheats de Mira: Monitoramento rigoroso para identificar alterações ilegais na mira.
+Proteção de Memória: Impede manipulações no cliente do jogo.
 
-Speed Hacks: Controle de velocidade para evitar movimentações fora do padrão.
+Validação de Pacotes: Monitora e analisa pacotes de rede para evitar alterações.
 
-Teleportes Irregulares: Prevenção contra deslocamentos não autorizados.
+Logs Detalhados: Registro completo de eventos e atividades suspeitas.
 
-Uso Indevido de Armas: Verificação de armas e munições inconsistentes.
+📂 Estrutura do Sistema
 
-Segurança Avançada
+Módulos Essenciais
 
-Proteção de Memória: Impede alterações no cliente do jogo por programas externos.
+core.inc: Núcleo do sistema.
 
-Validação de Pacotes: Analisa pacotes de rede para detectar manipulação de dados.
+speed.inc: Monitoramento de velocidade.
 
-Controle de Estado do Jogador: Garante consistência no comportamento dos jogadores durante o jogo.
+aim_detection.inc: Detecção de cheats de mira.
 
-Integração Simples
-
-Arquitetura modular que facilita a adaptação ao servidor.
-
-Compatível com diferentes configurações de servidores SA-MP.
-
-Estrutura do Sistema
-
-Módulos Core
-
-core.inc: Núcleo responsável por gerenciar o funcionamento principal.
-
-constants.inc: Centraliza definições e constantes para maior organização.
-
-utils.inc: Funções utilitárias para facilitar integrações e personalizações.
-
-Módulos de Detecção
-
-aim_detection.inc: Algoritmos especializados em trapaças relacionadas à mira.
-
-speed.inc: Verifica movimentações com velocidades fora do esperado.
-
-teleport.inc: Identifica teletransportes irregulares em tempo real.
-
-Proteções Adicionais
-
-memory_protection.inc: Garante integridade da memória do cliente.
-
-packet_validation.inc: Analisa pacotes para detectar inconsistências.
-
-player_state.inc: Monitora alterações críticas no estado do jogador.
+memory_protection.inc: Proteção avançada de memória.
 
 Sistema de Logs
 
-Registro detalhado de detecções e ações realizadas pelo sistema.
-
-Auditoria completa para administradores revisarem eventos suspeitos.
-
-Como Configurar
-
-Baixe o Projeto:
-Clone o repositório ou extraia os arquivos no diretório do servidor.
-
-git clone https://github.com/seuprojeto/fortiguard.git
-
-Configure os Arquivos:
-Ajuste config.inc conforme as necessidades do seu servidor.
-
-Carregue os Módulos:
-Inclua os módulos no seu servidor SA-MP.
-
-Teste o Sistema:
-Execute simulações de trapaça para validar as detecções.
-
-Suporte e Comunidade
-
-Site Oficial: fortiguard.com
-
-Documentação Completa: wiki.fortiguard.com
-
-Contato para Suporte: support@fortiguard.com
-
-Desenvolvido para garantir segurança e justiça no seu servidor SA-MP. Escolha FortiGuard e tenha confiança de que está protegido.
+Gera relatórios detalhados para auditoria e análise de eventos.
 
