@@ -1,63 +1,88 @@
-🎮 Bem-vindo ao FortiGuard Anti-Cheat System
+FortiGuard Anti-Cheat System
 
-FortiGuard é a solução definitiva para proteger servidores de SA-MP contra trapaças e comportamento desleal. Desenvolvido para garantir fair play, o FortiGuard oferece tecnologia de ponta para criar uma experiência segura e divertida para todos os jogadores.
+O FortiGuard é uma solução avançada de anti-cheat desenvolvida para servidores SA-MP, focada em oferecer máxima segurança e integridade ao ambiente de jogo. Este sistema garante que jogadores possam competir de forma justa, bloqueando trapaças e comportamento suspeito em tempo real.
 
-🔥 Por que escolher o FortiGuard?
+Principais Características
 
-Proteção em tempo real: Identifica e bloqueia trapaças instantaneamente.
+Detecção de Trapaças
 
-Fácil integração: Compatível com qualquer servidor de SA-MP.
+Aimbot e Cheats de Mira: Monitoramento rigoroso para identificar alterações ilegais na mira.
 
-Otimizado: Funciona sem comprometer o desempenho do servidor.
+Speed Hacks: Controle de velocidade para evitar movimentações fora do padrão.
 
-Auditoria completa: Gera logs detalhados de todas as atividades suspeitas.
+Teleportes Irregulares: Prevenção contra deslocamentos não autorizados.
 
-Atualizações regulares: Sempre à frente das novas ameaças.
+Uso Indevido de Armas: Verificação de armas e munições inconsistentes.
 
-🌟 Recursos Principais
+Segurança Avançada
 
-🔍 Detecção Avançada
+Proteção de Memória: Impede alterações no cliente do jogo por programas externos.
 
-Aimbots e Cheats de Mira: Bloqueia automaticamente mira assistida.
+Validação de Pacotes: Analisa pacotes de rede para detectar manipulação de dados.
 
-Speed Hacks: Identifica movimentação em velocidade anormal.
+Controle de Estado do Jogador: Garante consistência no comportamento dos jogadores durante o jogo.
 
-Teletransportes: Valida e previne deslocamentos ilegais.
+Integração Simples
 
-🔒 Segurança Reforçada
+Arquitetura modular que facilita a adaptação ao servidor.
 
-Proteção contra modificações de memória.
+Compatível com diferentes configurações de servidores SA-MP.
 
-Análise de pacotes para evitar manipulação de dados.
+Estrutura do Sistema
 
-Controle do estado do jogador para verificar comportamento inválido.
+Módulos Core
 
-🚀 Simples de Usar
+core.inc: Núcleo responsável por gerenciar o funcionamento principal.
 
-Configuração rápida e interface intuitiva.
+constants.inc: Centraliza definições e constantes para maior organização.
 
-Compatível com múltiplas versões do SA-MP.
+utils.inc: Funções utilitárias para facilitar integrações e personalizações.
 
-🛠️ Como Começar
+Módulos de Detecção
 
-Baixe o FortiGuard: Faça o download diretamente do nosso site oficial.
+aim_detection.inc: Algoritmos especializados em trapaças relacionadas à mira.
 
-Configure: Edite os arquivos de configuração para adaptar ao seu servidor.
+speed.inc: Verifica movimentações com velocidades fora do esperado.
 
-Instale os módulos: Adicione ao servidor e comece a proteger imediatamente.
+teleport.inc: Identifica teletransportes irregulares em tempo real.
 
-💡 Por dentro do FortiGuard
+Proteções Adicionais
 
-Componentes Principais:
+memory_protection.inc: Garante integridade da memória do cliente.
 
-core.inc: Gerencia toda a comunicação do sistema.
+packet_validation.inc: Analisa pacotes para detectar inconsistências.
 
-speed.inc: Valida a velocidade dos jogadores.
+player_state.inc: Monitora alterações críticas no estado do jogador.
 
-aim_detection.inc: Bloqueia cheats relacionados a mira.
+Sistema de Logs
 
-memory_protection.inc: Protege contra manipulações no jogo.
+Registro detalhado de detecções e ações realizadas pelo sistema.
 
-Launcher Integrado
+Auditoria completa para administradores revisarem eventos suspeitos.
 
-Com o launcher oficial, você pode configurar e gerenciar o FortiGuard de maneira rápida e eficiente.
+Como Configurar
+
+Baixe o Projeto:
+Clone o repositório ou extraia os arquivos no diretório do servidor.
+
+git clone https://github.com/seuprojeto/fortiguard.git
+
+Configure os Arquivos:
+Ajuste config.inc conforme as necessidades do seu servidor.
+
+Carregue os Módulos:
+Inclua os módulos no seu servidor SA-MP.
+
+Teste o Sistema:
+Execute simulações de trapaça para validar as detecções.
+
+Suporte e Comunidade
+
+Site Oficial: fortiguard.com
+
+Documentação Completa: wiki.fortiguard.com
+
+Contato para Suporte: support@fortiguard.com
+
+Desenvolvido para garantir segurança e justiça no seu servidor SA-MP. Escolha FortiGuard e tenha confiança de que está protegido.
+
